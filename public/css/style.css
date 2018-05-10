@@ -1,0 +1,38 @@
+#about-section{
+	background-image: url('../images/Group21.png');
+	background-size:100% auto;
+}
+#welcome-section{
+	background-image: url('../images/Group22.png');
+	background-size:100% auto;
+}
+#events-section{
+	background-image: url('../images/Group23.png');
+	background-size:100% auto;
+}
+#projects-section{
+	background-image: url('../images/Group3.png');
+	background-size:100% auto;
+}
+#achievements-section{
+	background-image: url('../images/Group2.png');
+	background-size:100% auto;
+}
+#contact-section{
+	background-image: url('../images/Group6.png');
+	background-size:100% auto;
+}
+
+#navbar{
+	width: 100%;
+	height: 9%;
+	top: 0px;
+	position: absolute;
+	z-index: 999;
+	background-color: #fff;
+	opacity: 0.2;
+}
+
+a{
+	text-decoration: none;
+}

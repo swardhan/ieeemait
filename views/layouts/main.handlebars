@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>IEEE MAIT</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.fullpage.js"></script>
+  <script type="text/javascript">
+		$(document).ready(function() {
+			$('#wrapper').fullpage();
+		});
+	</script>
+</head>
+<body>
+	{{> _navbar}}
+	<div id="wrapper">
+		<div class="section sections" data-anchor="about" id="about-section">
+			{{> _about}}
+		</div>
+
+		<div class="section sections" data-anchor="welcome" id="welcome-section">
+			{{> _welcome}}
+		</div>
+
+		<div class="section sections" data-anchor="events" id="events-section">
+			{{> _events}}
+		</div>
+
+		<div class="section sections" data-anchor="projects" id="projects-section">
+			{{> _projects}}	
+		</div>
+
+		<div class="section sections" data-anchor="achievements" id="achievements-section">
+			{{> _achievements}}
+		</div>
+
+		<div class="section sections" data-anchor="contact" id="contact-section">
+			{{> _contact}}
+		</div>
+	</div>
+</body>
+</html>
