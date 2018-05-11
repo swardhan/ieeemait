@@ -33,8 +33,7 @@
 }
 
 #menu li.active a{
-	background:#666;
-	background: rgba(0,0,0, 0.5);
+	background: rgba(255,255,255, 0.3);
 	color: #fff;
 	-webkit-border-radius: 10px; 
             border-radius: 10px;
@@ -77,4 +76,64 @@
 
 .logo {
 	padding: 10px 0 0 40px;
+}
+
+/*Welcome Page*/
+
+.welcome-grid{
+	margin-top: 60px;
+	display:grid;
+	height: 100%;
+	grid-template-columns: 65% 35%;
+	grid-template-rows: 60% 40%;
+	padding: 10%;
+}
+
+.welcome-grid > .content {
+	grid-column: 1/2;
+	grid-row: 1/2;
+
+}
+
+.welcome-grid > .join-btn{
+	grid-column: 2/3;
+	grid-row: 2/3;	
+	align-self: end;
+	justify-self: end;
+	background: #f0f8ff;
+    font-size: 3em;
+    border-radius: 19px;
+    padding: 5px 60px;
+    font-family: Helvetica;
+    font-weight: bold;
+    mix-blend-mode: screen;
+    cursor: pointer;
+}
+
+.welcome-grid > .content > p {
+	color: white;
+	font-family: "Questrial", arial, sans-serif;
+	margin:0 0 20px 0;
+}
+
+.welcome-grid > .content > p.welcome-p {
+	font-size: 2.5em;
+    font-weight: 400;
+}
+
+.welcome-grid > .content > p.welcome-ieee{
+	font-size: 9em;
+}
+
+.welcome-grid > .content > p.welcome-ieee > span {
+	font-weight: bold;
+}
+
+.welcome-grid > .content > p.welcome-p1,.welcome-grid > .content > p.welcome-p2{
+	font-size: 2em;
+} 
+
+.welcome-grid > .content > p.welcome-p2 {
+	font-style: italic;
+	font-weight: bold;
 }

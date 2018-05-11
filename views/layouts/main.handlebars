@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>IEEE MAIT</title>
-  <link href="https://fonts.googleapis.com/css?family=Gothic+A1|Lato|Montserrat|Muli|Open+Sans|Roboto|Source+Sans+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gothic+A1|Lato|Montserrat|Muli|Open+Sans|Roboto|Source+Sans+Pro|Questrial" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.css" />
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -13,7 +13,7 @@
   <script type="text/javascript">
 		$(document).ready(function() {
 			$('#wrapper').fullpage({
-				anchors: ['about', 'welcome', 'events', 'projects', 'achievements', 'contact'],
+				anchors: ['welcome', 'about', 'events', 'projects', 'achievements', 'contact'],
 				menu: "#menu"
 			});
 		});
@@ -22,13 +22,14 @@
 <body>
 	{{> _navbar}}
 	<div id="wrapper">
+		<div class="section sections" data-anchor="welcome" id="welcome-section">
+			{{> _welcome}}
+		</div>
+
 		<div class="section sections" data-anchor="about" id="about-section">
 			{{> _about}}
 		</div>
 
-		<div class="section sections" data-anchor="welcome" id="welcome-section">
-			{{> _welcome}}
-		</div>
 
 		<div class="section sections" data-anchor="events" id="events-section">
 			{{> _events}}
