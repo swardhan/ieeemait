@@ -82,12 +82,11 @@
 /*Welcome Page*/
 
 .welcome-grid{
-	margin-top: 60px;
 	display:grid;
-	height: 100%;
+	height: 100vh;
 	grid-template-columns: 65% 35%;
 	grid-template-rows: 55% 45%;
-	padding: 10%;
+	padding: 8%;
 
 }
 
@@ -103,9 +102,9 @@
 	align-self: end;
 	justify-self: end;
 	background: #f0f8ff;
-    font-size: 3em;
+    font-size: 2em;
     border-radius: 19px;
-    padding: 5px 60px;
+    padding: 1px 50px;
     font-family: Helvetica;
     font-weight: bold;
     mix-blend-mode: screen;
